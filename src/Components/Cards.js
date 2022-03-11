@@ -15,7 +15,7 @@ function Cards({ data }) {
         <Row>
           <Col>
             {arrayd.map((item, i) => {
-              return <CardContent key={i} dada={item} />;
+              return <CardContent key={i} dada={item} />
             })}
           </Col>
         </Row>
