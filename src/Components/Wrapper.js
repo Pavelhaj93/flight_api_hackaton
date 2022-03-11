@@ -1,5 +1,8 @@
 import loading from '../loading.gif';
 import Cards from './Cards';
+import Footer from './Footer';
+import Header from './Header';
+import SearchingFlights from './SearchingFlights';
 
 
 const { useState, useEffect } = require("react")
@@ -31,9 +34,13 @@ const Wrapper = () => {
 
     return (
         <>
+        <Header />
+        <SearchingFlights />
         {
         apiData && apiData.currency ? <Cards data={apiData} /> : <img src={loading}/>
         }
+
+        <Footer />
         </>
     )
 }
