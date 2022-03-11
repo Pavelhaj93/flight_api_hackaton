@@ -34,7 +34,6 @@ const Wrapper = () => {
         {
         apiData && apiData.currency ? <Cards data={apiData} /> : <img src={loading}/>
         }
-        <Cards data={apiData} />
         </>
     )
 }

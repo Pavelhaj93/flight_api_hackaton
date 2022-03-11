@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import { Button } from 'bootstrap';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -11,13 +11,13 @@ const CardContent = ({dada}) => {
             <Card.Body>
         <Card.Title>{dada.cityTo}</Card.Title>
         <Card.Text>
-                <strong>Bags Price:</strong>
+                
                 {
-                dada.bags_price.map((item, index) => {
-                    return <p>
-                                {item}
-                            </p>
-                })
+                    <>
+                        <p><strong>Flight From:</strong> {dada.flyFrom}</p>
+                        <p><strong>Flight To:</strong> {dada.flyTo}</p>
+                        <p><strong>Flight Duration:</strong> {dada.fly_duration}</p>                    
+                    </>
                 }
             
         </Card.Text>
@@ -26,5 +26,11 @@ const CardContent = ({dada}) => {
         </Card>
     )
 }
+
+// flyFrom: "PRG"
+// flyTo: "CRL"
+// fly_duration: "1h 25m"
+
+
 
 export default CardContent;
