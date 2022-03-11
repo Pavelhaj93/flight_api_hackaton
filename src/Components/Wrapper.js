@@ -32,9 +32,9 @@ const Wrapper = () => {
     return (
         <>
         {
-        apiData && apiData.currency ? <h1>{apiData.currency}</h1> : <img src={loading}/>
+        apiData && apiData.currency ? <Cards data={apiData} /> : <img src={loading}/>
         }
-        <Cards />
+        
         </>
     )
 }
