@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header className="header">
-            <p class="header__logo">Flight Scanner</p>
+            <p className="header__logo">Flight Scanner</p>
         </header>
     )
 }

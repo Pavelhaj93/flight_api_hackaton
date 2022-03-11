@@ -1,15 +1,23 @@
+import { useEffect } from 'react';
 import './SearchingFlight.css';
 
+const SearchingFlights = ({submithandling, allApiData}) => {
 
-const SearchingFlights = () => {
+
+    
+    console.log(allApiData);
+
     return (
-        <form className="searching__form">
-            <label>
-                <input type="text" name="from-flight" id="from-flight"/>
-            </label>
-            <label>
-                <input type="text" name="to-flight" id="to-flight"/>
-            </label>
+        <form 
+            onSubmit={submithandling}        
+        className="searching__form"
+        >
+            <input type="text" name="from-flight" id="from-flight"
+                placeholder='From?'
+                />    
+            <input type="text" name="to-flight" id="to-flight"
+                placeholder='Where to?'
+                />
             <input type="date"/>
             <input type="date"/>
             <input type="submit"/>
@@ -17,3 +25,4 @@ const SearchingFlights = () => {
     )
 }
 export default SearchingFlights;
+
