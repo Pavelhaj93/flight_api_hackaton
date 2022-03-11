@@ -1,0 +1,13 @@
+.header {
+  background-color: rgb(4, 63, 110);
+  height: 15vh;
+}
+
+.header__logo {
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  margin-top: 25px;
+  position: absolute;
+  font-size: 20px;
+}

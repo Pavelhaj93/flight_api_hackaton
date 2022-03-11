@@ -1,24 +1,18 @@
 .App {
   text-align: center;
-  
 }
-<<<<<<< HEAD
 
-.card-row{
+.card-row {
   display: flex;
   flex-wrap: wrap;
-  
-
-} 
+}
 
 .karta {
-margin: 20px 20px 0 0;
+  margin: 20px 20px 0 0;
 }
 
 .btn {
-  transition: all .2s ease-in-out;
-  
-
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -27,8 +21,4 @@ margin: 20px 20px 0 0;
 }
 
 .nadpis {
-  
 }
-
-=======
->>>>>>> 6cb8dd2 (stytling the cards and adding searching form)

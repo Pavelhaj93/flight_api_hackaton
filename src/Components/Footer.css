@@ -1,0 +1,10 @@
+.footer {
+  background-color: rgb(4, 63, 110);
+  margin-bottom: -50px;
+  padding: 20px 0;
+}
+
+.footer__paragraph {
+  color: white;
+  margin-left: 20px;
+}
