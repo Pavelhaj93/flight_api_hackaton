@@ -19,7 +19,7 @@ const Wrapper = () => {
     const fetchingData = async () => {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data.currency);
+        console.log(data);
         setApiData(data);
     }
 
@@ -34,7 +34,7 @@ const Wrapper = () => {
         {
         apiData && apiData.currency ? <h1>{apiData.currency}</h1> : <img src={loading}/>
         }
-        <Cards />
+        <Cards data={apiData} />
         </>
     )
 }
