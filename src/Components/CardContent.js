@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardContent = ({dada}) => {
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+        <Card style={{ width: '18rem', height:'19rem', border:'5px solid black', boxShadow:'5px 10px rgb(150, 134, 134)', borderRadius:'5px'}} className="karta">
+            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
-        <Card.Title>{dada.cityTo}</Card.Title>
+        <Card.Title style={{textShadow: '1px 1px 1px grey', fontSize:'24px', marginBottom:'35px'}}>{dada.cityTo}</Card.Title>
         <Card.Text>
                 
                 {
@@ -21,7 +21,7 @@ const CardContent = ({dada}) => {
                 }
             
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button style={{marginTop:'40px',borderRadius:'5px', boxShadow:' 0 1px 0 3px rgb(84, 126, 255)' }} className="btn"variant="primary">Go somewhere</Button>
             </Card.Body>
         </Card>
     )

@@ -8,12 +8,12 @@ function Cards({ data }) {
   console.log(arrayd);
   return (
     <>
-      <Container>
+      <Container className="container" style={{marginTop:'100px'}}>
         <Row>
-          <h1>Cheap Flights</h1>
+          <h3>Cheap Flights</h3>
         </Row>
-        <Row>
-          <Col>
+        <Row >
+          <Col className="card-row">
             {arrayd.map((item, i) => {
               return <CardContent key={i} dada={item} />
             })}
