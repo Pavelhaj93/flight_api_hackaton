@@ -37,7 +37,7 @@ const Wrapper = () => {
         <Header />
         <SearchingFlights />
         {
-        apiData && apiData.currency ? <Cards data={apiData} /> : <img src={loading}/>
+        apiData && apiData.currency ? <Cards data={apiData} /> : <img className="img"src={loading}/>
         }
 
         <Footer />
