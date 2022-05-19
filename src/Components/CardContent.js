@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardContent = ({dada}) => {
     return (
-        <Card style={{ width: '18rem', height:'19rem', border:'5px solid black', boxShadow:'5px 10px rgb(150, 134, 134)', borderRadius:'5px'}} className="karta">
+        <Card style={{ width: '18rem', height:'19rem', border:'4px solid black', boxShadow:'5px 10px 5px rgb(150, 134, 134)', borderRadius:'5px'}} className="karta">
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
         <Card.Title style={{textShadow: '1px 1px 1px grey', fontSize:'24px', marginBottom:'35px'}}>{dada.cityTo}</Card.Title>
@@ -26,10 +26,6 @@ const CardContent = ({dada}) => {
         </Card>
     )
 }
-
-// flyFrom: "PRG"
-// flyTo: "CRL"
-// fly_duration: "1h 25m"
 
 
 

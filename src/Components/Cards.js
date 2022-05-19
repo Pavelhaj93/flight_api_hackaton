@@ -8,9 +8,9 @@ function Cards({ data }) {
   console.log(arrayd);
   return (
     <>
-      <Container className="container" style={{marginTop:'100px'}}>
+      <Container className="container" style={{marginTop:'150px', marginBottom:'100px'}}>
         <Row>
-          <h3>Cheap Flights</h3>
+          <h3 className="nadpis">Cheap Flights</h3>
         </Row>
         <Row >
           <Col className="card-row">

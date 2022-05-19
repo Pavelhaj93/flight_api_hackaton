@@ -1,9 +1,14 @@
 .App {
   text-align: center;
+  background-image: url('./istockphoto-1297855347-170667a.jpeg');
+  background-size:cover ;
+  background-repeat: no-repeat;
 }
 
 .card-row {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -21,4 +26,41 @@
 }
 
 .nadpis {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 3px 3px grey;
+}
+
+.container {
+  
+
+}
+
+
+
+.img {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  
+}
+
+.input::placeholder {
+  color: lightgrey;
+}
+
+.date::-ms-input {
+  color: white;
+}
+
+.date::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.sbmt {
+  transition: all 0.2s ease-in-out;
+}
+
+.sbmt:hover {
+  transform: scale(1.1);
+  
 }

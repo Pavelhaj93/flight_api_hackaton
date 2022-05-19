@@ -43,10 +43,9 @@ const Wrapper = () => {
         console.log(data[0].alpha2Code);
         settingData(data[0].alpha2Code);
     }
-
-
-
-        const fetchingDestinationData = async (url, settingData) => {
+    
+    
+    const fetchingDestinationData = async (url, settingData) => {
         const response = await fetch(url);
         const data = await response.json();
         console.log(data[0].alpha2Code);
@@ -57,6 +56,10 @@ const Wrapper = () => {
         fetchingFirstData(url, setApiData);
     },[])
 
+        useEffect(() => {
+        fetchingFirstData(url, setApiData);
+    },[url])
+    
 
 
 
@@ -64,7 +67,8 @@ const Wrapper = () => {
         e.preventDefault();
         const from = e.target.children['from-flight'].value;
         const destination = e.target.children['to-flight'].value;
-
+        console.log(from);
+        console.log(destination);
         fetchingSourceData(`${urlOfTranslationDta}${from}`, setSourceData);
         fetchingDestinationData(`${urlOfTranslationDta}${destination}`, setDestinationeData);
 
@@ -74,12 +78,13 @@ const Wrapper = () => {
 
     return (
         <>
-            <Header />
-            <SearchingFlights submithandling={formHandler} allApiData={searchingData} />
-            {
-            apiData && apiData.currency ? <Cards data={apiData} /> : <img src={loading}/>
-            }
-            <Footer />
+        <Header />
+        <SearchingFlights submithandling={formHandler}  allApiData={apiData} />
+        {
+        apiData && apiData.currency ? <Cards data={apiData} /> : <img className="img"src={loading}/>
+        }
+
+        <Footer />
         </>
     )
 }
